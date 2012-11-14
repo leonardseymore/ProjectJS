@@ -1,0 +1,80 @@
+.appLogo {
+	background-color: white;
+	float: right;
+	width: 64px;
+	height: 32px;
+	background: url(../img/spritesheet.png) 0px -16px no-repeat;
+	.roundedCorners(2px);
+}
+
+.icon {
+	vertical-align: bottom;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.iconAccept {
+	background: url(../img/spritesheet.png) 0px 0px no-repeat;
+	.icon;
+}
+
+.iconDecline {
+	background: url(../img/spritesheet.png) -16px 0px no-repeat;
+	.icon;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Arial;
+	font-size: 12px;
+	border-top: 1px solid #cfcfcf;
+	background: #f2f2f2;
+}
+
+input, select {
+	margin: 3px;
+}
+
+nav a {
+	height: 100%;
+	.margined;
+}
+
+nav a:hover {
+	opacity: 1px;
+	color: #000000;
+}
+
+fieldset {
+	border: 1px solid #cfcfcf;
+	background: white;
+	.padded;
+}
+
+.header {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px 0px 5px 0px;
+}
+
+.appHeader {
+	background: #f5f5dc;
+	.padded(10px);
+}
+
+.appHeaderTitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.body {
+	.padded;
+}
+
+.pageHeader {
+	font-size: 16px;
+	font-weight: bold;
+}

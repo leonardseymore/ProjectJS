@@ -1,0 +1,5 @@
+For unit testing please see RhinoUnit project
+http://code.google.com/p/rhinounit/
+
+For DOM and other browser mocking support see ENVJS project
+http://www.envjs.com/

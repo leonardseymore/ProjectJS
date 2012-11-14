@@ -1,0 +1,49 @@
+.padded (@padding: 5px) {
+	padding: @padding;
+}
+
+.margined (@margin: 5px) {
+	margin: @margin;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.roundedCorners (@radius: 3px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+.roundedCornersAlt (@radiusTopLeft: 3px, @radiusTopRight: 3px, @radiusBottomRight: 3px, @radiusBottomLeft: 3px) {
+	border-radius: @radiusTopLeft @radiusTopRight @radiusBottomRight @radiusBottomLeft;
+	-webkit-border-radius: @radiusTopLeft @radiusTopRight @radiusBottomRight @radiusBottomLeft;
+	-moz-border-radius: @radiusTopLeft @radiusTopRight @radiusBottomRight @radiusBottomLeft;
+}
+
+.lightShadow (@offsetX: 0px, @offsetY: 0px, @blur: 5px, @color: #888) {
+	-moz-box-shadow: @offsetX @offsetY @blur @color;
+	-webkit-box-shadow: @offsetX @offsetY @blur @color;
+	box-shadow: @offsetX @offsetY @blur @color;
+}
+
+.backgroundGradient (@startColor: #4D90FE, @endColor: #4787ED) {
+	background-color: @endColor;
+	background-image: -webkit-linear-gradient(top, @startColor, @endColor);
+	background-image: -moz-linear-gradient(top, @startColor, @endColor);
+	background-image: -ms-linear-gradient(top, @startColor, @endColor);
+	background-image: -o-linear-gradient(top, @startColor, @endColor);
+	background-image: linear-gradient(top, @startColor, @endColor);
+}
+
+.alpha(@value: 1.0) {
+	opacity:@value;
+}
+
+.fontFace (@fontname, @fontfile) {
+	@font-face {
+		font-family: @fontname;
+		src: url("@{fontfile}");
+	}
+}
