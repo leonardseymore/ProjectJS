@@ -1,0 +1,6 @@
+CACHE MANIFEST
+# Version @app.manifest.version@
+
+# Resources that require the user to be online.
+NETWORK:
+*
