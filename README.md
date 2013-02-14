@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html ng-app>
-<head>
-  <title>@app.name@</title>
-  <link rel="stylesheet/less" type="text/css" href="css/styles-@app.version@.less" media="all"/>
-  <script src="js/app-@app.version@.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    function AboutController($scope) {
-      $scope.version = projectjsApp.appVersion;
-    }
-  </script>
-</head>
-<body style="padding: 40px;" class="container" ng-controller="AboutController">
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <span class="brand">@app.name@</span>
-      <ul class="nav">
-        <li class="active"><a href="index.html">Home</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
 <header>
-  <h1>About <div class="appLogo"></div></h1>
+  <h1>About</h1>
 </header>
 <section>
   <h2>Overview</h2>
@@ -271,14 +248,3 @@ Total time: 0 seconds
     </table>
   </p>
 </section>
-<footer>
-  <div class="navbar navbar-fixed-bottom navbar-inverse">
-    <div class="navbar-inner">
-      <div class="container">
-        <span style="color: #d3d3d3">Version {{version}}</span>
-      </div>
-    </div>
-  </div>
-</footer>
-</body>
-</html>
