@@ -131,63 +131,8 @@
         <td>Build all source files and create an exploded target directory that can be hosted on a web server</td>
       </tr>
       <tr>
-        <td colspan="2">
-          <pre class="example">
-r4:projectjs leonardseymore$ ant
-Buildfile: /Users/leonardseymore/src/trunk/projectjs/build.xml
-
-target:
-
-static:
-
-manifest:
-   [delete] Deleting: /Users/leonardseymore/src/trunk/projectjs/target/exploded/projectjs.appcache
-     [copy] Copying 1 file to /Users/leonardseymore/src/trunk/projectjs/target/exploded
-
-js-filter:
-
-js-compress:
-   [jscomp] Compiling 5 file(s) with 38 extern(s)
-   [jscomp] /Users/leonardseymore/src/trunk/projectjs/src/lib/jquery-1.9.1/jquery-1.9.1.min.js:3: WARNING - If this if/for/while really shouldnt have a body, use {}
-            ...
-   [jscomp] /Users/leonardseymore/src/trunk/projectjs/target/filtered/js/projectjs.js:56: WARNING - Suspicious code. This code lacks side-effects. Is there a bug?
-   [jscomp]       if (jqxhr.status == 408 || jqxhr.status == 504) { // network timeout exception
-   [jscomp]       ^
-   [jscomp] 0 error(s), 4 warning(s)
-
-js-concat:
-
-js:
-
-css:
-
-img:
-     [copy] Copying 1 file to /Users/leonardseymore/src/trunk/projectjs/target/exploded/img
-
-all:
-
-BUILD SUCCESSFUL
-Total time: 8 seconds
-          </pre>
-        </td>
-      <tr>
         <td>clean</td>
         <td>Delete all generated content</td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <pre class="example">
-r4:projectjs leonardseymore$ ant clean
-Buildfile: /Users/leonardseymore/src/trunk/projectjs/build.xml
-
-clean:
-   [delete] Deleting directory /Users/leonardseymore/src/trunk/projectjs/target
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-Total time: 4 seconds
-          </pre>
-        </td>
       </tr>
       <tr>
         <td>css</td>
@@ -231,41 +176,8 @@ Total time: 4 seconds
         <td>Run test cases</td>
       </tr>
       <tr>
-        <td colspan="2">
-          <pre class="example">
-r4:projectjs leonardseymore$ ant test
-Buildfile: /Users/leonardseymore/src/trunk/projectjs/build.xml
-
-test:
-[rhinounit] Testsuite: appTest.js
-[rhinounit] [  Envjs/1.6 (Rhino; U; Mac OS X x86_64 10.8.2; en-US; rv:1.7.0.rc2) Resig/20070309 PilotFish/1.2.13  ]
-[rhinounit] Tests run: 1, Failures: 0, Errors: 0
-[rhinounit]
-
-BUILD SUCCESSFUL
-Total time: 4 seconds
-          </pre>
-        </td>
-      </tr>
-      <tr>
         <td>zip</td>
         <td>Zips up exploded target directory for distribution</td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <pre class="example">
-r4:projectjs leonardseymore$ ant zip
-Buildfile: /Users/leonardseymore/src/trunk/projectjs/build.xml
-
-target:
-
-zip:
-      [zip] Building zip: /Users/leonardseymore/src/trunk/projectjs/target/ProjectJS-0.0-DEV.zip
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-          </pre>
-        </td>
       </tr>
       </tbody>
     </table>
